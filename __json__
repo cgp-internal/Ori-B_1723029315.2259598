@@ -1,0 +1,33 @@
+{
+    "index.html": {
+        "description": "Main entry point for the single-page portal. Contains HTML structure for the header, footer, and two large buttons.",
+        "dependencies": {
+            "style.css": [
+                "visual styling"
+            ]
+        },
+        "exposes": [
+            "button elements"
+        ]
+    },
+    "style.css": {
+        "description": "Defines CSS styles for a visually appealing and modern look-and-feel.",
+        "exposes": [
+            "visual styling"
+        ]
+    },
+    "script.js": {
+        "description": "Handles button click events, redirecting users to 'cgp.genericgs.com'.",
+        "dependencies": {
+            "index.html": [
+                "button elements"
+            ]
+        }
+    },
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide"
+    },
+    ".gitignore": {
+        "description": ".gitignore with node-modules and cache files"
+    }
+}
